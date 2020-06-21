@@ -10,7 +10,6 @@ module.exports = class EmailTransport extends Transport {
     this.to = opts.to;
     this.subject = opts.subject;
     this.text = opts.text;
-    this.html = opts.html;
 
     this.transporter = nodemailer.createTransport({
       host: opts.host,
@@ -38,7 +37,7 @@ module.exports = class EmailTransport extends Transport {
     this.transporter.sendMail({
       from: this.from,
       to: this.to,
-      subject: this.subject || `winston [${info.level}]`,
+      subject: this.subject || `winston: [${info.level}]`,
       text: info.message,
       html: `<p>${info.message}<p>`,
     }, function(err, response){ console.log(err) })
