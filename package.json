@@ -1,0 +1,29 @@
+{
+  "name": "winston-email-transport",
+  "version": "1.0.0",
+  "description": "Email transport using Nodemailer behind the scenes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexander9306/winston-email-transport.git"
+  },
+  "keywords": [
+    "winston",
+    "transport",
+    "email-transport",
+    "email-logger"
+  ],
+  "author": "Alexander Damaso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexander9306/winston-email-transport/issues"
+  },
+  "homepage": "https://github.com/alexander9306/winston-email-transport#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.10",
+    "winston-transport": "^4.4.0"
+  }
+}
